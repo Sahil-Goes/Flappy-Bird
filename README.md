@@ -2,10 +2,12 @@
 - This project is a recreation of the classic Flappy Bird game, enhanced with AI agents that learn to play the game using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm.
 Watch as digital birds evolve over generations to master pipes and perfect their flight!
 
-- AI was implemented using NEAT (NeuroEvolution of Augmenting Topologies) evolves both the weights and structure of neural networks, making it well-suited for reinforcement learning tasks like Flappy Bird.
+- This project uses the [NEAT-Python](https://neat-python.readthedocs.io/en/latest/) library to evolve neural networks that control the bird's behavior in the game.
 
-- NOTE: There are 2 projects in this repository the "Flappy_Bird" folder contains the base version of the game where the user can play, so if you wanna enjoy the classic you can do so!
-- The other files contain the AI implemented code necessary only to run the AI playing the game.
+- NEAT (NeuroEvolution of Augmenting Topologies) evolves both the weights and structure of neural networks, making it well-suited for reinforcement learning tasks like Flappy Bird.
+
+- NOTE: There are 2 projects in this repository the "Flappy_Bird" folder contains the basic game that the user can play, so if you wanna enjoy the classic you can do so!
+- the other files contain code to run the AI-controlled version of the game.
 ---
 
 ## 🎮 Features
@@ -40,14 +42,14 @@ python flappy_bird.py
 ```
 Ensure the following directories exist in your project:
 ```bash
-imgs/       # Contains bird1.png, bird2.png, bird3.png, pipe.png, base.png, bg.png
+imgs/                   # Contains sprite images
 config_feedforward.txt  # NEAT configuration file
 ```
 
 ## 📂 Folder Structure
 ```csharp
 Flappy_Bird_AI/
-├── Flappy_Bird            #contains the basic game which user can play
+├── Flappy_Bird            //contains the basic game which user can play
 ├── flappy_bird.py
 ├── config_feedforward.txt
 ├── imgs/
